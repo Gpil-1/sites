@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = (data.get('name') || '').toString().trim();
       const toast = document.getElementById('toast');
       toast.textContent = name
-        ? `${name}, дякуємо! Передзвонимо протягом 15 хвилин для підтвердження 🌷`
-        : 'Дякуємо! Передзвонимо протягом 15 хвилин для підтвердження 🌷';
+        ? `${name}, дякуємо! Передзвонимо вам протягом 15 хвилин 🌷`
+        : 'Дякуємо! Передзвонимо вам протягом 15 хвилин 🌷';
       toast.classList.add('show');
       setTimeout(() => toast.classList.remove('show'), 3600);
       form.reset();
