@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Замовити букет — Букетик · Ізмаїл</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23e5a9a0'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='18' fill='%231c130f' text-anchor='middle'%3EБ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><span class="mark">🌷</span><em>Букетик</em></a>
+    <nav class="nav-links">
+      <a href="index.html#hits">Букети</a>
+      <a href="index.html#cats">Категорії</a>
+      <a href="delivery.html">Доставка й оплата</a>
+      <a href="order.html" class="active">Замовити</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+380663882700"><b>+38 066</b> 388 27 00</a>
+      <a class="btn sm" href="order.html">Замовити букет</a>
+      <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="pagehero">
+  <div class="orb"></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Головна</a><i>→</i>Замовити</div>
+    <h1 class="reveal">Замовлення за <span class="grad">30 секунд</span></h1>
+    <p class="lead reveal" style="transition-delay:.1s">
+      Заповніть форму — менеджер передзвонить протягом 15 хвилин, уточнить деталі
+      та час доставки. Або одразу у Viber: +38 066 388 27 00.
+    </p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="grid c2" style="align-items:start">
+
+      <div class="panel reveal">
+        <form id="orderForm">
+          <div class="field">
+            <label for="f-name">Ваше ім'я</label>
+            <input id="f-name" name="name" type="text" placeholder="Як до вас звертатися" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Ваш телефон</label>
+            <input id="f-phone" name="phone" type="tel" placeholder="+38 __ ___ __ __" required>
+          </div>
+          <div class="field full">
+            <label for="f-buket">Букет</label>
+            <select id="f-buket" name="buket">
+              <option>101 червона троянда — 11 800 грн</option>
+              <option>51 червона троянда — 6 240 грн</option>
+              <option>21 червона троянда — 2 970 грн</option>
+              <option>Букет «Королева» — 2 970 грн</option>
+              <option>Ведмедик з трояндами та «Raffaello» — 2 700 грн</option>
+              <option>Букет «100 ромашок» — 2 310 грн</option>
+              <option>Букет «Подаруночок» — 2 310 грн</option>
+              <option>Букет «З тобою» — 1 820 грн</option>
+              <option>Букет «Доброго ранку» — 1 490 грн</option>
+              <option>Інший / потрібна порада флориста</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="f-who">Отримувач</label>
+            <input id="f-who" name="who" type="text" placeholder="Ім'я та адреса — або залиште порожнім для сюрпризу за телефоном">
+          </div>
+          <div class="field">
+            <label for="f-date">Дата вручення</label>
+            <input id="f-date" name="date" type="date">
+          </div>
+          <div class="field">
+            <label for="f-time">Бажаний час</label>
+            <input id="f-time" name="time" type="time">
+          </div>
+          <div class="field full">
+            <label for="f-card">Текст на листівці (необов'язково)</label>
+            <textarea id="f-card" name="card" placeholder="Ми напишемо його гарним почерком і прикріпимо до букета"></textarea>
+          </div>
+          <div class="field full">
+            <button class="btn" type="submit" style="width:100%">Замовити доставку</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <div class="tcard reveal">
+          <div class="ico">⚡</div><h3>Що далі</h3>
+          <ul style="color:var(--muted);font-size:14px;margin-top:12px">
+            <li style="margin-bottom:10px"><b style="color:var(--text)">01.</b> Ви надсилаєте форму — 30 секунд</li>
+            <li style="margin-bottom:10px"><b style="color:var(--text)">02.</b> Менеджер дзвонить протягом 15 хвилин і все уточнює</li>
+            <li style="margin-bottom:10px"><b style="color:var(--text)">03.</b> Флорист збирає букет зі свіжих квітів</li>
+            <li><b style="color:var(--text)">04.</b> Кур'єр вручає — вам приходить фотозвіт</li>
+          </ul>
+        </div>
+        <div class="tcard reveal" style="transition-delay:.08s;margin-top:16px">
+          <div class="ico">🎁</div><h3>Сюрприз без адреси</h3>
+          <p>Отримувач у іншому кінці міста, а ви не знаєте адреси? Достатньо номера телефону — ми зв'яжемося та вруче тактовно.</p>
+        </div>
+        <div class="tcard reveal" style="transition-delay:.16s;margin-top:16px">
+          <div class="ico">🔒</div><h3>Оплата після дзвінка</h3>
+          <p>Сплачуєте тільки після підтвердження замовлення менеджером: Privat24, картка або готівка кур'єру.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="col"><b><em style="color:var(--accent)">Букетик</em></b>
+      <span>Свіжі квіти з доставкою</span>
+      <span>м. Ізмаїл · працюємо цілодобово</span></div>
+    <div class="col"><b>Телефони</b>
+      <a href="tel:+380663882700">+38 066 388 27 00 · Viber</a>
+      <a href="tel:+380963882700">+38 096 388 27 00 · WhatsApp</a>
+      <a href="mailto:zakaz@buketik24.com.ua">zakaz@buketik24.com.ua</a></div>
+    <div class="col"><b>Розділи</b>
+      <a href="index.html#hits">Букети</a>
+      <a href="delivery.html">Доставка й оплата</a>
+      <a href="order.html">Замовити</a></div>
+    <div class="demo-note">© 2026 · Неофіційний концепт-редизайн. Форма демонстраційна — дані нікуди не відправляються.</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Дякуємо! Передзвонимо протягом 15 хвилин 🌷</div>
+<script src="js/main.js"></script>
+</body>
+</html>
