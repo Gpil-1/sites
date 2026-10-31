@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Онлайн-запис — DENTALEX · Ізмаїл</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2338bdf8'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='800' font-size='18' fill='%230a0f1c' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><span class="mark">D</span>DENTALEX</a>
+    <nav class="nav-links">
+      <a href="index.html">Головна</a>
+      <a href="services.html">Послуги</a>
+      <a href="doctors.html">Лікарі</a>
+      <a href="prices.html">Ціни</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+380636790707"><b>+38 063</b> 679 07 07</a>
+      <a class="btn sm" href="booking.html">Записатися</a>
+      <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="pagehero">
+  <div class="orb"></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Головна</a><i>→</i>Онлайн-запис</div>
+    <h1 class="reveal">Онлайн-<span class="grad">запис</span></h1>
+    <p class="lead reveal" style="transition-delay:.1s">
+      30 секунд — і ви в черзі. Адміністратор набере, підтвердить час і нагадає про візит у SMS.
+    </p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="grid c2" style="align-items:start">
+
+      <div class="panel reveal">
+        <form id="bookForm">
+          <div class="field">
+            <label for="f-name">Ім'я</label>
+            <input id="f-name" name="name" type="text" placeholder="Як до вас звертатися" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Телефон</label>
+            <input id="f-phone" name="phone" type="tel" placeholder="+38 __ ___ __ __" required>
+          </div>
+          <div class="field full">
+            <label for="f-doc">Лікар</label>
+            <select id="f-doc" name="doctor">
+              <option>Не має значення — найближчий вільний час</option>
+              <option>Олексій Олександрович — протезування, імплантація</option>
+              <option>Костянтин Валерійович — терапія, канали</option>
+              <option>Наталія Олексіївна — консультація, гігієна</option>
+              <option>Андрій Ігорович — хірургія, видалення</option>
+              <option>Ірина Сергіївна — дитячий прийом</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="f-serv">Послуга</label>
+            <select id="f-serv" name="service">
+              <option>Консультація та план лікування</option>
+              <option>Лікування зуба / каналів</option>
+              <option>Імплантація</option>
+              <option>Протезування</option>
+              <option>Видалення зуба</option>
+              <option>Професійна гігієна / відбілювання</option>
+              <option>Дитячий прийом</option>
+              <option>Лікування під седацією</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="f-date">Бажана дата</label>
+            <input id="f-date" name="date" type="date">
+          </div>
+          <div class="field full">
+            <label for="f-comment">Коментар (необов'язково)</label>
+            <textarea id="f-comment" name="comment" placeholder="Наприклад: болить зуб зліва знизу; або: записую дитину 5 років"></textarea>
+          </div>
+          <div class="field full">
+            <button class="btn" type="submit" style="width:100%">Відправити заявку</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <div class="tcard reveal">
+          <div class="ico">⚡</div><h3>Як це працює</h3>
+          <ul style="color:var(--muted);font-size:14px;margin-top:12px">
+            <li style="margin-bottom:10px"><b style="color:var(--text)">01.</b> Ви заповнюєте форму — 30 секунд, без дзвінків</li>
+            <li style="margin-bottom:10px"><b style="color:var(--text)">02.</b> Адміністратор набирає протягом дня та підтверджує час</li>
+            <li style="margin-bottom:10px"><b style="color:var(--text)">03.</b> Напередодні — SMS-нагадування з адресою</li>
+            <li><b style="color:var(--text)">04.</b> Приходите на 5 хвилин раніше — і все</li>
+          </ul>
+        </div>
+        <div class="tcard reveal" style="transition-delay:.08s;margin-top:16px">
+          <div class="ico">🔒</div><h3>Спокій пацієнта</h3>
+          <p>Номер використовується лише для підтвердження запису. Без спаму, без «акційних» дзвінків.</p>
+        </div>
+        <div class="tcard reveal" style="transition-delay:.16s;margin-top:16px">
+          <div class="ico">😴</div><h3>Боїтеся лікарів?</h3>
+          <p>Є седація: ви спите — лікар лікує. Зазначте у коментарі, і ми підберемо відповідний прийом.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="col"><b>DENTALEX</b>
+      <span>Стоматологічна клініка</span>
+      <span>пр. Суворова, 59а, Ізмаїл</span></div>
+    <div class="col"><b>Розділи</b>
+      <a href="index.html">Головна</a>
+      <a href="services.html">Послуги</a>
+      <a href="doctors.html">Лікарі</a>
+      <a href="prices.html">Ціни</a></div>
+    <div class="col"><b>Контакти</b>
+      <a href="tel:+380636790707">+38 063 679 07 07</a>
+      <span>Пн–Пт · 9:00–17:00</span>
+      <span>Сб · 10:00–14:00</span></div>
+    <div class="demo-note">© 2026 · Неофіційний концепт-редизайн. Форма демонстраційна — дані нікуди не відправляються.</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Дякуємо! Адміністратор набере вас протягом дня ☎</div>
+<script src="js/main.js"></script>
+</body>
+</html>
