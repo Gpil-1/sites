@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = (new FormData(form).get('name') || '').toString().trim();
       const toast = document.getElementById('toast');
       toast.textContent = name
-        ? `${name}, дякуємо! Адміністратор набере вас протягом дня ☎`
-        : 'Дякуємо! Адміністратор набере вас протягом дня ☎';
+        ? `${name}, дякуємо! Зателефонуємо вам протягом дня ☎`
+        : 'Дякуємо! Зателефонуємо вам протягом дня ☎';
       toast.classList.add('show');
       setTimeout(() => toast.classList.remove('show'), 3600);
       form.reset();
